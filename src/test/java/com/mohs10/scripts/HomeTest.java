@@ -11,10 +11,10 @@ import com.mohs10.reuse.CommonFuns;
 		  //Clicking on Categories links #4
 		  
 			
-			/*  @Test public void CategoriesTest() throws Exception { CommonFuns cat = new
+			  /*@Test public void CategoriesTest() throws Exception { CommonFuns cat = new
 			  CommonFuns();
 			  
-			  cat.Categories(); Thread.sleep(5000); }
+			  cat.Categories(); Thread.sleep(5000); }*/
 			 
 		  //Clicking on news link #5
 		  
@@ -61,16 +61,12 @@ import com.mohs10.reuse.CommonFuns;
  * Thread.sleep(5000); }
  * 
  */ 
-	
-	//admin 
-		@Test
-		public void admin() throws Exception {
-			CommonFuns loin=new CommonFuns();
-			loin.login("Admin", "admin123");
-			Thread.sleep(2000);
+	@Test
+	public void comparePro() throws Exception {
+		CommonFuns comparison=new CommonFuns();
+		comparison.compare();
+		Thread.sleep(3000);
 		}
-	
-	
 	
 	}
  

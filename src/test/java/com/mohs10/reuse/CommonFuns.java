@@ -88,7 +88,7 @@ import com.mohs10.or.HomePage;
 		/*public void Categories() throws Exception {
 				  StartBrowser.childTest =
 				  StartBrowser.parentTest.createNode("Category links");
-				  aDriver.navigateToApplication("https://demowebshop.tricentis.com/");
+				  aDriver.navigateToApplication("https://www.demo.guru99.com/V4/");
 				  aDriver.click(HomePage.lnkbook, "Performed click operation on books link");
 				  aDriver.click(HomePage.addtocart,"added to cart");
 				  
@@ -103,7 +103,7 @@ import com.mohs10.or.HomePage;
 			  
               
 			  //shopping cart entry
-			 /* public void Shopping(String email,String pwd) throws Exception {
+			  /*public void Shopping(String email,String pwd) throws Exception {
 					StartBrowser.childTest =
 							  StartBrowser.parentTest.createNode("shopping cart");
 					aDriver.navigateToApplication("https://demowebshop.tricentis.com/");
@@ -123,31 +123,42 @@ import com.mohs10.or.HomePage;
 			  aDriver.click(HomePage.lnkJewelry,"Performed click operation on Jewelry Link"
 			  ); aDriver.click(HomePage.
 			  lnkGiftCards,"Performed click operation on Gift Cards Link");
-			  */
 			  
-	//admin verify
-	public void login(String userid,String paswd) throws Exception {
-		StartBrowser.childTest=StartBrowser.parentTest.createNode("login");
-		aDriver.navigateToApplication("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-		aDriver.type(HomePage.loginemail,userid,"email" );
-		aDriver.type(HomePage.loginpwd, paswd,"password");
-		aDriver.click(HomePage.clickLoginButton," log in button clicked");
-		aDriver.click(HomePage.adminbuttonClick,"admin button click");
-		aDriver.click(HomePage.ckeckbox, "checkbox clicked");
-		if(HomePage.userRole!=HomePage.userRole){
 			
-		 aDriver.click(HomePage.deletbutton, "deleted userpaswd");}
-		else {
-			System.out.println("amdin found");}
-		aDriver.click(HomePage.popup," click on popup");
+			  */
+	
+	public void compare() throws Exception {
+		StartBrowser.childTest=StartBrowser.parentTest.createNode("compareproducts");
+		aDriver.navigateToApplication("https://demowebshop.tricentis.com/");
+		//1st item
+		aDriver.click(HomePage.computerclick,"mouseover");
+		
+		aDriver.click(HomePage.dekstop, "dekstop click");
+		
+		aDriver.click(HomePage.product1, "product1 click");
+		
+		aDriver.click(HomePage.compare1, "add to compare click");
+	//2nd item	
+aDriver.click(HomePage.computerclick,"mouseover");
+		
+		aDriver.click(HomePage.dekstop, "dekstop click");
 		
 		
-	}
-			  
-			  
-			  
+		aDriver.click(HomePage.product2,"product 2 click");
+		aDriver.click(HomePage.compare2, "add to compare click");
+		
+		if(HomePage.price!=HomePage.price) {
+			aDriver.click(HomePage.remove,"product removed");
+		}
+		else{ System.out.println("the value is same");}
+			
+		
 	
-	
+			  
+			  }
+			  
+			  
+			  }
 			  
 			  
 			  

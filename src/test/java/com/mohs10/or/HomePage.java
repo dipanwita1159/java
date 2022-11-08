@@ -14,7 +14,7 @@ public class HomePage {
 	  //); public static By lnkElectronics =
 	  //By.xpath("//li[@class='inactive']//a[normalize-space()='Electronics']");
 		
-		 /* public static By lnkApparelandShoes =
+		  /*public static By lnkApparelandShoes =
 		  By.xpath("//li[@class='inactive']//a[normalize-space()='Apparel & Shoes']");
 		  public static By dress=By.
 		  xpath("//body/div[@class='master-wrapper-page']/div[@class='master-wrapper-content']/div[@class='master-wrapper-main']/div[@class='center-2']/div[@class='page category-page']/div[@class='page-body']/div[@class='product-grid']/div[1]/div[1]"
@@ -137,19 +137,22 @@ public class HomePage {
 	 * By.xpath("//a[normalize-space()='Click here for order details.']"); public
 	 * static By classOrderconfrmtn = By.
 	 * xpath("//strong[normalize-space()='Your order has been successfully processed!']"
-	 * );*/
+	 * ); */
+	//clickon computertag
+	public static By computerclick=By.xpath("//li[@class='inactive']//a[normalize-space()='Computers']");
+	//click on desktop
+	public static By dekstop=By.xpath("//li[@class='inactive']//a[normalize-space()='Desktops']");
 	
+	//clickon products
+	public static By product1=By.xpath("//a[normalize-space()='Build your own cheap computer']");
+	public static By compare1=By.xpath("//input[@value='Add to compare list']");
+	//procuct2
+	public static By product2=By.xpath("//a[normalize-space()='Build your own computer']");
+	public static By compare2=By.xpath("//input[@value='Add to compare list']");
+	// price
+	public static By price=By.xpath("//td[normalize-space()='1200.00']");
+	//remove
+	public static By remove=By.xpath("//body[1]/div[4]/div[1]/div[4]/div[2]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/p[1]/input[1]");
 	
-	//Login In OrangeHrm//
-	  public static By loginemail=By.xpath("//input[@placeholder='Username']");
-	  public static By loginpwd=By.xpath("//input[@placeholder='Password']");
-	  public static By clickLoginButton=By.xpath("//button[normalize-space()='Login']");
-	  //Admin//
-	  public static By adminbuttonClick=By.xpath("//li[1]//a[1]//span[1]");
-	  public static By ckeckbox=By.xpath("//body/div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-background-container']/div[@class='orangehrm-paper-container']/div[@class='orangehrm-container']/div[@role='table']/div[1]/div[1]/div[1]/div[1]");
-	  public static By deletbutton= By.xpath("//div[45]//div[1]//div[6]//div[1]//button[1]//i[1]");
-	  public static By userRole=By.xpath("//div[starts-with(text(),'Admin')]");
-	  public static By deletrole=By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/button[1]/i[1]");
-	public static By popup=By.xpath("//body[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/div[6]/div[1]/button[1]/i[1]");
 }
 	 
